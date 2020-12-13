@@ -4,7 +4,11 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'tx)djmti7l58g(+u6^a$cj5$_3=cj&z^l@#=74dcqoa8)jd8e('
 DEBUG = True
-ALLOWED_HOSTS = ['shvasily.pythonanywhere.com']
+ALLOWED_HOSTS = [
+    'shvasily.pythonanywhere.com',
+    'localhost',
+    '127.0.0.1'
+]
 
 INSTALLED_APPS = [
     'django.contrib.auth',
