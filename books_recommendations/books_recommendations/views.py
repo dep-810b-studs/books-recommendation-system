@@ -2,4 +2,4 @@ from django.shortcuts import render
 
 
 def books_recommendations(request):
-    return render(request, "BooksRecommendations.html", {})
+    return render(request, "books_recommendations/BooksRecommendations.html", {})
