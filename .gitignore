@@ -1,0 +1,13 @@
+.ipynb_checkpoints
+*.zip
+*.zip.1
+*.pyc
+lib64
+bin/**
+share/**
+lib/**
+ml-latest-small/**
+flask/**
+books_recommendations/Lib/**
+books_recommendations/Scripts/**
+books_recommendations/.idea/**
