@@ -1,0 +1,54 @@
+{% load static %}
+
+<style type="text/css">
+
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+form {
+    display: inline-block;
+	position: absolute;
+	top: 40%;
+	left: 45%;
+	margin: -150px 0 0 -150px;
+	width:400px;
+	height:400px;
+}
+select{
+    font-size:160%;
+}
+label{
+    display: inline-block;
+    position: absolute;
+    font-size:160%;
+    color:white;
+    top: 10%;
+	left: 20%;
+}
+p{
+    font-size:160%;
+    color:white;
+}
+
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <title>Books recommendations</title>
+<body style="background-image: url('{% static "images/background.jpg" %}');">
+    <label>Рекоммендательная система для поиска книг по интересам</label>
+    <form>
+        <p>Выберите книгу</p>
+        <select  size="3">
+            <option>"Мартин Иден"- Джек Лондон</option>
+            <option>"Чапаев и Пустота"- Виктор Пелевин</option>
+            <option>"Властелин колец"- Джон Р.Р. Толкин</option>
+        </select>
+        <p>Рейтинг книги: 9.2/10</p>
+        <p>Рекоммендуется к прочтению пользователям:</p>
+    </form>
+</body>
+</html>
