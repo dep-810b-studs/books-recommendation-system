@@ -1,7 +1,6 @@
-# Приложение доступно по адресу 
-<br/> http://shvasily.pythonanywhere.com/
-
 # Инструкция по запуску
+#### Перед запуском необходимо скачать дамп объекта рекомендательной системы
+`./download_dump.sh`
 ## Запуск в режиме demon(без логов)
 `docker-compose -f ./docker-compose.yaml up -d --build`
 ## Запуск с выводом логов в консоль
@@ -10,3 +9,6 @@
 ## Локальный запуск
 `pip install -r requirements.txt`
  <br/>`python ./manage.py runserver 8000`
+## Приложение доступно по адресу 
+<br/> http://shvasily.pythonanywhere.com/
+<br/> P.S.: В приложении, развернутом на pythonanywhere используется stub режим рекомендательной системы из-за ограничений по ПЗУ.
