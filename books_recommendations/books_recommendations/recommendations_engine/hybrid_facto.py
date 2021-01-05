@@ -1,7 +1,7 @@
 import numpy as np
 import surprise
 import pickle
-
+import os
 
 class HybridFacto(surprise.AlgoBase):
 
@@ -47,6 +47,11 @@ class HybridFacto(surprise.AlgoBase):
             pickle.dump(self, dump_file, pickle.HIGHEST_PROTOCOL)
 
     @staticmethod
-    def load_instance_from_dump(dump_path):
-        with open(dump_path, 'rb') as dump_file:
-            return pickle.load(dump_file)
+    def load_instance_from_dump():
+        dump_path = './recommender.pkl'
+        if os.path.exists(dump_path):
+            with open(dump_path, 'rb') as dump_file:
+                print('Loading dump starting')
+                return pickle.load(dump_file)
+        else:
+            return HybridFacto()
