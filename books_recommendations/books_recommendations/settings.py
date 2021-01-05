@@ -11,7 +11,6 @@ ALLOWED_HOSTS = [
 ]
 
 INSTALLED_APPS = [
-    'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
@@ -21,7 +20,6 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
@@ -55,3 +53,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = '/'
 STATICFILES_DIRS = [BASE_DIR / "static"]
+
+BASE_VIEWS_FOLDER = 'books_recommendations'

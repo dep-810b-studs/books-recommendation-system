@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url("/static/images/background.jpg");
+}
+form {
+    display: inline-block;
+	position: absolute;
+	top: 40%;
+	left: 45%;
+	margin: -150px 0 0 -150px;
+	width:400px;
+	height:400px;
+}
+select{
+    font-size:160%;
+}
+label{
+    display: inline-block;
+    position: absolute;
+    font-size:160%;
+    color:white;
+    top: 10%;
+	left: 20%;
+}
+p{
+    font-size:160%;
+    color:white;
+}
+
+.display-4 {
+    font-size: calc(1.475rem + 2.7vw);
+    font-weight: 300;
+    line-height: 1.2;
+}
