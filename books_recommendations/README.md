@@ -1,6 +1,7 @@
 # Инструкция по запуску
 #### Перед запуском необходимо скачать дамп объекта рекомендательной системы
 `./download_dump.sh`
+<br/> Либо по ссылке https://drive.google.com/file/d/1SIgr1ULQR3rRNfVOBiyhKvjkEkwYaoku/view?usp=sharing
 ## Запуск в режиме demon(без логов)
 `docker-compose -f ./docker-compose.yml up -d --build`
 ## Запуск с выводом логов в консоль
