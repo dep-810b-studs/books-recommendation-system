@@ -2,9 +2,9 @@
 #### Перед запуском необходимо скачать дамп объекта рекомендательной системы
 `./download_dump.sh`
 ## Запуск в режиме demon(без логов)
-`docker-compose -f ./docker-compose.yaml up -d --build`
+`docker-compose -f ./docker-compose.yml up -d --build`
 ## Запуск с выводом логов в консоль
-`docker-compose -f ./docker-compose.yaml up --build`
+`docker-compose -f ./docker-compose.yml up --build`
 <br/> Приложение будет доступно по адресу http://localhost:8000
 ## Локальный запуск
 `pip install -r requirements.txt`
