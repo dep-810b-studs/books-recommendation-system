@@ -2,6 +2,7 @@
 #### Перед запуском необходимо скачать дамп объекта рекомендательной системы
 `./download_dump.sh`
 <br/> Либо по ссылке https://drive.google.com/file/d/1SIgr1ULQR3rRNfVOBiyhKvjkEkwYaoku/view?usp=sharing
+<br/> В итоге дамп должен лежать в корне проекта (в одном каталоге с файлом manage.py)
 ## Запуск в режиме demon(без логов)
 `docker-compose -f ./docker-compose.yml up -d --build`
 ## Запуск с выводом логов в консоль
